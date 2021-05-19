@@ -19,7 +19,7 @@ public class MoveAround : MonoBehaviour
 
         Vector3 moveCal = transform.right * x + transform.forward * z;
 
-        controller.Move(moveCal * 100 * Time.deltaTime);
+        controller.Move(moveCal * 70 * Time.deltaTime);
 
         GetComponent<Transform>().Rotate(Vector3.up * rotation * 50);
     }
